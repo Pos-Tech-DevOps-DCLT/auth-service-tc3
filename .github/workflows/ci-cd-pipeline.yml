@@ -1,0 +1,19 @@
+name: CI/cd — auth-service
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  checks: write
+
+jobs:
+  ci:
+    uses: Pos-Tech-DevOps-DCLT/infra-tc3/.github/workflows/ci-cd-go-template.yaml@main
+    with:
+      project: auth-service
+    secrets: inherit

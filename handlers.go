@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-// Estrutura para o corpo da requisição de criação de chave - teste alteração gitops
+// Estrutura para o corpo da requisição de criação de chave.
 type CreateKeyRequest struct {
 	Name string `json:"name"`
 }
